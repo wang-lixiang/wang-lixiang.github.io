@@ -27,7 +27,7 @@
       <link href="/posts/e4fa6148.html"/>
       <url>/posts/e4fa6148.html</url>
       
-        <content type="html"><![CDATA[<h3 id="重大消息！重大消息！"><a href="#重大消息！重大消息！" class="headerlink" title="重大消息！重大消息！"></a>重大消息！重大消息！</h3><h3 id="汪汪的小脑袋瓜子一定要记住啦"><a href="#汪汪的小脑袋瓜子一定要记住啦" class="headerlink" title="汪汪的小脑袋瓜子一定要记住啦~"></a>汪汪的小脑袋瓜子一定要记住啦~</h3><h3 id="这可是属于我们的承诺！"><a href="#这可是属于我们的承诺！" class="headerlink" title="这可是属于我们的承诺！"></a>这可是属于我们的承诺！</h3><img src="/img/2024/90.jpg" width="40%" height="40%"><img src="/img/2024/89.jpg" width="40%" height="40%">]]></content>
+        <content type="html"><![CDATA[<h3 id="重大消息！重大消息！"><a href="#重大消息！重大消息！" class="headerlink" title="重大消息！重大消息！"></a>重大消息！重大消息！</h3><h3 id="汪汪的小脑袋瓜子一定要记住啦"><a href="#汪汪的小脑袋瓜子一定要记住啦" class="headerlink" title="汪汪的小脑袋瓜子一定要记住啦~"></a>汪汪的小脑袋瓜子一定要记住啦~</h3><h3 id="这可是属于我们的承诺！"><a href="#这可是属于我们的承诺！" class="headerlink" title="这可是属于我们的承诺！"></a>这可是属于我们的承诺！</h3><img src="/img/2024/90.jpg" width="40%" height="40%"><img src="/img/2024/89.jpg" width="40%" height="40%"><h3 id="今天是2024年9月12日"><a href="#今天是2024年9月12日" class="headerlink" title="今天是2024年9月12日"></a>今天是2024年9月12日</h3><h3 id="宝宝找到汪汪的啦"><a href="#宝宝找到汪汪的啦" class="headerlink" title="宝宝找到汪汪的啦~"></a>宝宝找到汪汪的啦~</h3><h3 id="开心-超级开心！"><a href="#开心-超级开心！" class="headerlink" title="开心~超级开心！"></a>开心~超级开心！</h3><img src="/img/2024/95.jpg" width="40%" height="40%"><h3 id="为了我们共同准备！！！"><a href="#为了我们共同准备！！！" class="headerlink" title="为了我们共同准备！！！"></a>为了我们共同准备！！！</h3>]]></content>
       
       
       
@@ -615,11 +615,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[{"name":"Love-Diary","short_name":"Love-Diary","theme_color":"#3b70fc","background_color":"#3b70fc","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -659,11 +659,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[{"name":"Love-Diary","short_name":"Love-Diary","theme_color":"#3b70fc","background_color":"#3b70fc","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
