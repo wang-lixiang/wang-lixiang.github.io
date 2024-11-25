@@ -1,98 +1,95 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // 获取已保存的日期
+// 日历初始化逻辑封装为函数
+const initCalendar = () => {
     const savedDates = JSON.parse(localStorage.getItem('savedDates')) || {};
-    // 生成日历
-    function generateCalendar(year) {
+
+    const generateCalendar = (year) => {
         const calendar = document.getElementById('calendar');
+        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回
         calendar.innerHTML = '';
 
-        // 月份名称
-        const monthNames = [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-        ];
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'];
 
-        for (let month = 0; month < 12; month++) {
+        monthNames.forEach((name, month) => {
             const monthDiv = document.createElement('div');
             monthDiv.className = 'month';
 
             const monthName = document.createElement('div');
             monthName.className = 'month-name';
-            monthName.textContent = `${monthNames[month]} ${year}`;
+            monthName.textContent = `${name} ${year}`;
             monthDiv.appendChild(monthName);
 
             const table = document.createElement('table');
-            const header = document.createElement('tr');
-            ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {
-                const th = document.createElement('th');
-                th.textContent = day;
-                header.appendChild(th);
-            });
-            table.appendChild(header);
+            const headerRow = createTableHeader();
+            table.appendChild(headerRow);
 
-            // 获取该月的第一天和天数
-            const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const firstDay = new Date(year, month, 1).getDay();
 
-            let day = 1;
-            for (let row = 0; row < 6; row++) { // 最多6行
-                const tr = document.createElement('tr');
-                for (let col = 0; col < 7; col++) { // 一周7天
-                    const td = document.createElement('td');
-                    if (row === 0 && col < firstDay || day > daysInMonth) {
-                        td.className = 'empty'; // 空白单元格
-                    } else {
-                        td.textContent = day++;
-
-                        const dateKey = `${month + 1}.${day - 1}`; // 获取日期 "MM.DD" 格式
-                        // 如果该日期已经有心心覆盖，恢复显示
-                        if (savedDates[dateKey]) {
-                            const heartOverlay = document.createElement('div');
-                            heartOverlay.className = 'heart-overlay';
-                            heartOverlay.textContent = '❤';
-                            td.appendChild(heartOverlay); // 添加心心覆盖
-                        }
-
-                        // 为每个日期单元格添加点击事件
-                        td.addEventListener('click', function() {
-                            // 如果该日期已经有心心覆盖，移除它，否则添加
-                            if (td.querySelector('.heart-overlay')) {
-                                td.removeChild(td.querySelector('.heart-overlay')); // 移除心心
-                                delete savedDates[dateKey]; // 从localStorage中移除该日期
-                            } else {
-                                const heartOverlay = document.createElement('div');
-                                heartOverlay.className = 'heart-overlay';
-                                heartOverlay.textContent = '❤'; // 显示心心
-                                td.appendChild(heartOverlay); // 添加心心覆盖
-                                savedDates[dateKey] = true; // 在localStorage中保存该日期
-                            }
-
-                            // 更新localStorage中的日期数据
-                            localStorage.setItem('savedDates', JSON.stringify(savedDates));
-                        });
-                    }
-                    tr.appendChild(td);
+            for (let i = 0, day = 1; i < 6; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < 7; j++) {
+                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, savedDates);
+                    if (cell.day) day++;
+                    row.appendChild(cell.element);
                 }
-                table.appendChild(tr);
+                table.appendChild(row);
             }
 
             monthDiv.appendChild(table);
             calendar.appendChild(monthDiv);
-        }
-    }
-  
-    // 强制刷新页面
-    function forcePageRefreshOnClick() {
-        document.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function(event) {
-                if (window.location.pathname === link.getAttribute('href')) {
-                    event.preventDefault();  // 阻止默认行为
-                    window.location.reload(); // 强制刷新页面
-                }
-            });
         });
-    }
+    };
+
+    const createTableHeader = () => {
+        const headerRow = document.createElement('tr');
+        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {
+            const th = document.createElement('th');
+            th.textContent = day;
+            headerRow.appendChild(th);
+        });
+        return headerRow;
+    };
+
+    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {
+        const cell = { element: document.createElement('td'), day: false };
+        const dateKey = `${month + 1}.${day}`;
+
+        if ((row === 0 && col < firstDay) || day > daysInMonth) {
+            cell.element.className = 'empty';
+        } else {
+            cell.day = true;
+            cell.element.textContent = day;
+            if (savedDates[dateKey]) addHeartOverlay(cell.element);
+
+            cell.element.addEventListener('click', () => toggleHeart(cell.element, dateKey));
+        }
+        return cell;
+    };
+
+    const addHeartOverlay = (element) => {
+        const overlay = document.createElement('div');
+        overlay.className = 'heart-overlay';
+        overlay.textContent = '❤';
+        element.appendChild(overlay);
+    };
+
+    const toggleHeart = (element, dateKey) => {
+        if (element.querySelector('.heart-overlay')) {
+            element.removeChild(element.querySelector('.heart-overlay'));
+            delete savedDates[dateKey];
+        } else {
+            addHeartOverlay(element);
+            savedDates[dateKey] = true;
+        }
+        localStorage.setItem('savedDates', JSON.stringify(savedDates));
+    };
 
     generateCalendar(2024);
-    forcePageRefreshOnClick(); // 添加强制刷新逻辑
-});
+};
+
+// 初始化页面
+document.addEventListener('DOMContentLoaded', initCalendar);
+
+// 监听 Pjax 页面切换事件
+document.addEventListener('pjax:complete', initCalendar);

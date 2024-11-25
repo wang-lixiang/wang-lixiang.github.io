@@ -4,20 +4,20 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  h1 {
+}
+h1 {
     margin-top: 20px;
     color: #333;
-  }
-  .year-calendar {
+}
+.year-calendar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto;
     gap: 15px;
     max-width: 1200px; /* 容器最大宽度 */
-  }
-  .month {
+}
+.month {
     background-color: #ffffff;
     border: 1px solid #e3e3e3;
     border-radius: 10px;
@@ -28,23 +28,23 @@ body {
     max-width: 300px; /* 最大宽度，防止过宽 */
     overflow: hidden; /* 避免内容溢出 */
     transition: transform 0.2s ease;
-  }
-  .month:hover {
+}
+.month:hover {
     transform: scale(1.05);
-  }
-  .month-name {
+}
+.month-name {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: #4A90E2;
     margin-bottom: 10px;
-  }
-  table {
+}
+table {
     width: 100%; /* 表格宽度自适应父容器 */
     border-collapse: collapse;
     table-layout: fixed; /* 固定表格布局 */
-  }
-  th, td {
+}
+th, td {
     width: 14.28%; /* 每列占总宽度的 1/7 */
     height: 35px;
     text-align: center;
@@ -53,42 +53,24 @@ body {
     color: #555;
     position: relative;
     box-sizing: border-box; /* 确保宽度包括内边距和边框 */
-  }
-  th {
+}
+th {
     background-color: #f4f4f4;
     color: #555;
     font-weight: bold;
-  }
-  td {
+}
+td {
     background-color: #ffffff;
-  }
-  td:hover {
+}
+td:hover {
     background-color: #dff0ff;
     cursor: pointer;
-  }
-  .empty {
+}
+.empty {
     background-color: #f7f8fc;
     cursor: default;
-  }
- 
-  /* 响应式设计 */
-  @media (max-width: 1024px) {
-    .month {
-        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */
-    }
-  }
-  @media (max-width: 768px) {
-    .month {
-        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */
-    }
-  }
-  @media (max-width: 480px) {
-    .month {
-        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */
-    }
-  }
-
-  .heart-overlay {
+}
+.heart-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,4 +83,20 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .month {
+        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */
     }
+}
+@media (max-width: 768px) {
+    .month {
+        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */
+    }
+}
+@media (max-width: 480px) {
+    .month {
+        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */
+    }
+}

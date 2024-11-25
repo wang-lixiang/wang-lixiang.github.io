@@ -786,11 +786,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
+      <title>2024</title>
+      <link href="/date24/index.html"/>
+      <url>/date24/index.html</url>
       
-        <content type="html"><![CDATA[{"name":"Love-Diary","short_name":"Love-Diary","theme_color":"#3b70fc","background_color":"#3b70fc","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -802,6 +802,50 @@
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/date24.js"/>
+      <url>/js/date24.js</url>
+      
+        <content type="html"><![CDATA[// 日历初始化逻辑封装为函数const initCalendar = () => {    const savedDates = JSON.parse(localStorage.getItem('savedDates')) || {};    const generateCalendar = (year) => {        const calendar = document.getElementById('calendar');        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回        calendar.innerHTML = '';        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'];        monthNames.forEach((name, month) => {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${name} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const headerRow = createTableHeader();            table.appendChild(headerRow);            const daysInMonth = new Date(year, month + 1, 0).getDate();            const firstDay = new Date(year, month, 1).getDay();            for (let i = 0, day = 1; i < 6; i++) {                const row = document.createElement('tr');                for (let j = 0; j < 7; j++) {                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, savedDates);                    if (cell.day) day++;                    row.appendChild(cell.element);                }                table.appendChild(row);            }            monthDiv.appendChild(table);            calendar.appendChild(monthDiv);        });    };    const createTableHeader = () => {        const headerRow = document.createElement('tr');        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {            const th = document.createElement('th');            th.textContent = day;            headerRow.appendChild(th);        });        return headerRow;    };    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {        const cell = { element: document.createElement('td'), day: false };        const dateKey = `${month + 1}.${day}`;        if ((row === 0 && col < firstDay) || day > daysInMonth) {            cell.element.className = 'empty';        } else {            cell.day = true;            cell.element.textContent = day;            if (savedDates[dateKey]) addHeartOverlay(cell.element);            cell.element.addEventListener('click', () => toggleHeart(cell.element, dateKey));        }        return cell;    };    const addHeartOverlay = (element) => {        const overlay = document.createElement('div');        overlay.className = 'heart-overlay';        overlay.textContent = '❤';        element.appendChild(overlay);    };    const toggleHeart = (element, dateKey) => {        if (element.querySelector('.heart-overlay')) {            element.removeChild(element.querySelector('.heart-overlay'));            delete savedDates[dateKey];        } else {            addHeartOverlay(element);            savedDates[dateKey] = true;        }        localStorage.setItem('savedDates', JSON.stringify(savedDates));    };    generateCalendar(2024);};// 初始化页面document.addEventListener('DOMContentLoaded', initCalendar);// 监听 Pjax 页面切换事件document.addEventListener('pjax:complete', initCalendar);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/runtime.min.js"/>
+      <url>/js/runtime.min.js</url>
+      
+        <content type="html"><![CDATA[var now=new Date;function createtime(){    var t=new Date("06/07/2024 22:28:00");    now.setTime(now.getTime()+250);    var e=(now-t)/1e3/60/60/24,a=Math.floor(e),n=(now-t)/1e3/60/60-24*a,r=Math.floor(n);    1==String(r).length&&(r="0"+r);    var s=(now-t)/1e3/60-1440*a-60*r,i=Math.floor(s);    1==String(i).length&&(i="0"+i);    var o=(now-t)/1e3-86400*a-3600*r-60*i,l=Math.round(o);    1==String(l).length&&(l="0"+l);    let g="";    g=r<18&&r>=9?`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`:`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),250);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
+      
+        <content type="html"><![CDATA[{"name":"Love-Diary","short_name":"Love-Diary","theme_color":"#3b70fc","background_color":"#3b70fc","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
@@ -823,51 +867,7 @@
       <link href="/css/date24.css"/>
       <url>/css/date24.css</url>
       
-        <content type="html"><![CDATA[body {    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    background-color: #f7f8fc;    margin: 0;    padding: 0;    text-align: center;  }  h1 {    margin-top: 20px;    color: #333;  }  .year-calendar {    display: flex;    flex-wrap: wrap;    justify-content: center;    margin: 20px auto;    gap: 15px;    max-width: 1200px; /* 容器最大宽度 */  }  .month {    background-color: #ffffff;    border: 1px solid #e3e3e3;    border-radius: 10px;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    padding: 15px;    flex: 1 1 calc(25% - 30px); /* 每行最多显示4个，留出间隙 */    min-width: 250px; /* 最小宽度 */    max-width: 300px; /* 最大宽度，防止过宽 */    overflow: hidden; /* 避免内容溢出 */    transition: transform 0.2s ease;  }  .month:hover {    transform: scale(1.05);  }  .month-name {    text-align: center;    font-size: 18px;    font-weight: bold;    color: #4A90E2;    margin-bottom: 10px;  }  table {    width: 100%; /* 表格宽度自适应父容器 */    border-collapse: collapse;    table-layout: fixed; /* 固定表格布局 */  }  th, td {    width: 14.28%; /* 每列占总宽度的 1/7 */    height: 35px;    text-align: center;    vertical-align: middle;    border: 1px solid #e3e3e3;    color: #555;    position: relative;    box-sizing: border-box; /* 确保宽度包括内边距和边框 */  }  th {    background-color: #f4f4f4;    color: #555;    font-weight: bold;  }  td {    background-color: #ffffff;  }  td:hover {    background-color: #dff0ff;    cursor: pointer;  }  .empty {    background-color: #f7f8fc;    cursor: default;  }   /* 响应式设计 */  @media (max-width: 1024px) {    .month {        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */    }  }  @media (max-width: 768px) {    .month {        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */    }  }  @media (max-width: 480px) {    .month {        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */    }  }  .heart-overlay {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(255, 0, 0, 0.3); /* 半透明的红色背景 */    color: #ff0000;    font-size: 30px;    display: flex;    justify-content: center;    align-items: center;    font-weight: bold;    }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/date24.js"/>
-      <url>/js/date24.js</url>
-      
-        <content type="html"><![CDATA[document.addEventListener('DOMContentLoaded', () => {    // 获取已保存的日期    const savedDates = JSON.parse(localStorage.getItem('savedDates')) || {};    // 生成日历    function generateCalendar(year) {        const calendar = document.getElementById('calendar');        calendar.innerHTML = '';        // 月份名称        const monthNames = [            'January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'        ];        for (let month = 0; month < 12; month++) {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${monthNames[month]} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const header = document.createElement('tr');            ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {                const th = document.createElement('th');                th.textContent = day;                header.appendChild(th);            });            table.appendChild(header);            // 获取该月的第一天和天数            const firstDay = new Date(year, month, 1).getDay();            const daysInMonth = new Date(year, month + 1, 0).getDate();            let day = 1;            for (let row = 0; row < 6; row++) { // 最多6行                const tr = document.createElement('tr');                for (let col = 0; col < 7; col++) { // 一周7天                    const td = document.createElement('td');                    if (row === 0 && col < firstDay || day > daysInMonth) {                        td.className = 'empty'; // 空白单元格                    } else {                        td.textContent = day++;                        const dateKey = `${month + 1}.${day - 1}`; // 获取日期 "MM.DD" 格式                        // 如果该日期已经有心心覆盖，恢复显示                        if (savedDates[dateKey]) {                            const heartOverlay = document.createElement('div');                            heartOverlay.className = 'heart-overlay';                            heartOverlay.textContent = '❤';                            td.appendChild(heartOverlay); // 添加心心覆盖                        }                        // 为每个日期单元格添加点击事件                        td.addEventListener('click', function() {                            // 如果该日期已经有心心覆盖，移除它，否则添加                            if (td.querySelector('.heart-overlay')) {                                td.removeChild(td.querySelector('.heart-overlay')); // 移除心心                                delete savedDates[dateKey]; // 从localStorage中移除该日期                            } else {                                const heartOverlay = document.createElement('div');                                heartOverlay.className = 'heart-overlay';                                heartOverlay.textContent = '❤'; // 显示心心                                td.appendChild(heartOverlay); // 添加心心覆盖                                savedDates[dateKey] = true; // 在localStorage中保存该日期                            }                            // 更新localStorage中的日期数据                            localStorage.setItem('savedDates', JSON.stringify(savedDates));                        });                    }                    tr.appendChild(td);                }                table.appendChild(tr);            }            monthDiv.appendChild(table);            calendar.appendChild(monthDiv);        }    }      // 强制刷新页面    function forcePageRefreshOnClick() {        document.querySelectorAll('a').forEach(function(link) {            link.addEventListener('click', function(event) {                if (window.location.pathname === link.getAttribute('href')) {                    event.preventDefault();  // 阻止默认行为                    window.location.reload(); // 强制刷新页面                }            });        });    }    generateCalendar(2024);    forcePageRefreshOnClick(); // 添加强制刷新逻辑});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/runtime.min.js"/>
-      <url>/js/runtime.min.js</url>
-      
-        <content type="html"><![CDATA[var now=new Date;function createtime(){    var t=new Date("06/07/2024 22:28:00");    now.setTime(now.getTime()+250);    var e=(now-t)/1e3/60/60/24,a=Math.floor(e),n=(now-t)/1e3/60/60-24*a,r=Math.floor(n);    1==String(r).length&&(r="0"+r);    var s=(now-t)/1e3/60-1440*a-60*r,i=Math.floor(s);    1==String(i).length&&(i="0"+i);    var o=(now-t)/1e3-86400*a-3600*r-60*i,l=Math.round(o);    1==String(l).length&&(l="0"+l);    let g="";    g=r<18&&r>=9?`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`:`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),250);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2024</title>
-      <link href="/date24/index.html"/>
-      <url>/date24/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[body {    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    background-color: #f7f8fc;    margin: 0;    padding: 0;    text-align: center;}h1 {    margin-top: 20px;    color: #333;}.year-calendar {    display: flex;    flex-wrap: wrap;    justify-content: center;    margin: 20px auto;    gap: 15px;    max-width: 1200px; /* 容器最大宽度 */}.month {    background-color: #ffffff;    border: 1px solid #e3e3e3;    border-radius: 10px;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    padding: 15px;    flex: 1 1 calc(25% - 30px); /* 每行最多显示4个，留出间隙 */    min-width: 250px; /* 最小宽度 */    max-width: 300px; /* 最大宽度，防止过宽 */    overflow: hidden; /* 避免内容溢出 */    transition: transform 0.2s ease;}.month:hover {    transform: scale(1.05);}.month-name {    text-align: center;    font-size: 18px;    font-weight: bold;    color: #4A90E2;    margin-bottom: 10px;}table {    width: 100%; /* 表格宽度自适应父容器 */    border-collapse: collapse;    table-layout: fixed; /* 固定表格布局 */}th, td {    width: 14.28%; /* 每列占总宽度的 1/7 */    height: 35px;    text-align: center;    vertical-align: middle;    border: 1px solid #e3e3e3;    color: #555;    position: relative;    box-sizing: border-box; /* 确保宽度包括内边距和边框 */}th {    background-color: #f4f4f4;    color: #555;    font-weight: bold;}td {    background-color: #ffffff;}td:hover {    background-color: #dff0ff;    cursor: pointer;}.empty {    background-color: #f7f8fc;    cursor: default;}.heart-overlay {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(255, 0, 0, 0.3); /* 半透明的红色背景 */    color: #ff0000;    font-size: 30px;    display: flex;    justify-content: center;    align-items: center;    font-weight: bold;}/* 响应式设计 */@media (max-width: 1024px) {    .month {        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */    }}@media (max-width: 768px) {    .month {        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */    }}@media (max-width: 480px) {    .month {        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */    }}]]></content>
       
     </entry>
     
