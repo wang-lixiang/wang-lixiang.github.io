@@ -1,5 +1,5 @@
 // GitHub API 配置
-const GITHUB_API_URL = "https://api.github.com/repos/wang-lixiang/wang-lixiang.github.io/contents/saved-dates.json";
+const GITHUB_API_URL = "https://github.com/wang-lixiang/wang-lixiang.github.io/contents/saved-dates.json";
 const GITHUB_TOKEN = "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"; // 确保你的 Token 不会暴露在公共场合
 
 // 日历初始化逻辑封装为函数
