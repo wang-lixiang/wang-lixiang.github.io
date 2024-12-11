@@ -1,54 +1,6 @@
-// IndexedDB 初始化逻辑
-const openDatabase = () => {
-    return new Promise((resolve, reject) => {
-        const request = indexedDB.open('CalendarDatabase', 1);
-
-        request.onupgradeneeded = (event) => {
-            const db = event.target.result;
-            if (!db.objectStoreNames.contains('savedDates')) {
-                db.createObjectStore('savedDates', { keyPath: 'id' });
-            }
-        };
-
-        request.onsuccess = (event) => {
-            resolve(event.target.result);
-        };
-
-        request.onerror = (event) => {
-            reject(event.target.error);
-        };
-    });
-};
-
-// 从 IndexedDB 获取数据
-const fetchSavedDatesFromDB = async () => {
-    const db = await openDatabase();
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction(['savedDates'], 'readonly');
-        const store = transaction.objectStore('savedDates');
-        const request = store.get('calendar');
-
-        request.onsuccess = () => resolve(request.result ? request.result.data : {});
-        request.onerror = () => reject(request.error);
-    });
-};
-
-// 保存数据到 IndexedDB
-const saveDatesToDB = async (savedDates) => {
-    const db = await openDatabase();
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction(['savedDates'], 'readwrite');
-        const store = transaction.objectStore('savedDates');
-        const request = store.put({ id: 'calendar', data: savedDates });
-
-        request.onsuccess = () => resolve();
-        request.onerror = () => reject(request.error);
-    });
-};
-
 // 日历初始化逻辑封装为函数
-const initCalendar = async () => {
-    const savedDates = await fetchSavedDatesFromDB();
+const initCalendar = () => {
+    const savedDates = JSON.parse(localStorage.getItem('savedDates')) || {};
 
     const generateCalendar = (year) => {
         const calendar = document.getElementById('calendar');
@@ -110,9 +62,7 @@ const initCalendar = async () => {
             cell.element.textContent = day;
             if (savedDates[dateKey]) addHeartOverlay(cell.element);
 
-            cell.element.addEventListener('click', async () => {
-                await toggleHeart(cell.element, dateKey, savedDates);
-            });
+            cell.element.addEventListener('click', () => toggleHeart(cell.element, dateKey));
         }
         return cell;
     };
@@ -124,7 +74,7 @@ const initCalendar = async () => {
         element.appendChild(overlay);
     };
 
-    const toggleHeart = async (element, dateKey, savedDates) => {
+    const toggleHeart = (element, dateKey) => {
         if (element.querySelector('.heart-overlay')) {
             element.removeChild(element.querySelector('.heart-overlay'));
             delete savedDates[dateKey];
@@ -132,7 +82,7 @@ const initCalendar = async () => {
             addHeartOverlay(element);
             savedDates[dateKey] = true;
         }
-        await saveDatesToDB(savedDates);
+        localStorage.setItem('savedDates', JSON.stringify(savedDates));
     };
 
     generateCalendar(2024);
