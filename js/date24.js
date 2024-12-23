@@ -9,7 +9,7 @@ const initCalendar = () => {
         '9.7': true, '9.8': true, '9.14': true, '9.15': true, '9.16': true, '9.17': true,
         '10.6': true, '10.7': true, '10.18': true, '10.19': true, '10.20': true,
         '11.2': true, '11.3': true, '11.16': true, '11.17': true, '11.23': true,
-        '12.7': true, '12.8': true
+        '12.7': true, '12.8': true, '12.21': true, '12.22': true
     };
     localStorage.setItem('savedDates', JSON.stringify(defaultHighlightedDates));
 
