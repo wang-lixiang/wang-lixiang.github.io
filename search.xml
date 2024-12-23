@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>200天啦</title>
+      <link href="/posts/a48785f4.html"/>
+      <url>/posts/a48785f4.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="宝宝和汪汪已经在一起两百天了呢"><a href="#宝宝和汪汪已经在一起两百天了呢" class="headerlink" title="宝宝和汪汪已经在一起两百天了呢"></a>宝宝和汪汪已经在一起两百天了呢</h3><h3 id="圣诞主题"><a href="#圣诞主题" class="headerlink" title="圣诞主题~"></a>圣诞主题~</h3><h3 id="宝宝和汪汪又多了很多张合照了呢"><a href="#宝宝和汪汪又多了很多张合照了呢" class="headerlink" title="宝宝和汪汪又多了很多张合照了呢~"></a>宝宝和汪汪又多了很多张合照了呢~</h3><img src="/img/2024/177.jpg" width="40%" height="40%"><img src="/img/2024/183.jpg" width="40%" height="40%"><h3 id="一起去了西园寺，宝宝一定要平平安安的！"><a href="#一起去了西园寺，宝宝一定要平平安安的！" class="headerlink" title="一起去了西园寺，宝宝一定要平平安安的！"></a>一起去了西园寺，宝宝一定要平平安安的！</h3><img src="/img/2024/178.jpg" width="40%" height="40%"><h3 id="冲呀！一起去看独墅湖的落日！"><a href="#冲呀！一起去看独墅湖的落日！" class="headerlink" title="冲呀！一起去看独墅湖的落日！"></a>冲呀！一起去看独墅湖的落日！</h3><img src="/img/2024/179.jpg" width="40%" height="40%"><h3 id="排了一个多小时，终于是吃上了哑巴生煎。宝宝说：要带汪汪去吃好多好多内蒙的没事"><a href="#排了一个多小时，终于是吃上了哑巴生煎。宝宝说：要带汪汪去吃好多好多内蒙的没事" class="headerlink" title="排了一个多小时，终于是吃上了哑巴生煎。宝宝说：要带汪汪去吃好多好多内蒙的没事~"></a>排了一个多小时，终于是吃上了哑巴生煎。宝宝说：要带汪汪去吃好多好多内蒙的没事~</h3><img src="/img/2024/182.jpg" width="40%" height="40%"><h3 id="是彩色的罐罐呢"><a href="#是彩色的罐罐呢" class="headerlink" title="是彩色的罐罐呢~"></a>是彩色的罐罐呢~</h3><img src="/img/2024/181.jpg" width="40%" height="40%"><h3 id="看电影《好东西》，宝宝想的好开心呀"><a href="#看电影《好东西》，宝宝想的好开心呀" class="headerlink" title="看电影《好东西》，宝宝想的好开心呀"></a>看电影《好东西》，宝宝想的好开心呀</h3><h3 id="也是坐上了情侣坐呢"><a href="#也是坐上了情侣坐呢" class="headerlink" title="也是坐上了情侣坐呢"></a>也是坐上了情侣坐呢</h3><img src="/img/2024/180.jpg" width="40%" height="40%"><h3 id="宝宝送的围巾呢汪汪也是有围巾的小朋友啦！芜湖"><a href="#宝宝送的围巾呢汪汪也是有围巾的小朋友啦！芜湖" class="headerlink" title="宝宝送的围巾呢汪汪也是有围巾的小朋友啦！芜湖"></a>宝宝送的围巾呢<del>汪汪也是有围巾的小朋友啦！芜湖</del></h3><img src="/img/2024/184.jpg" width="40%" height="40%"><h3 id="宝宝带天大的周边给汪汪喽-且看我们下次的天津之旅呢"><a href="#宝宝带天大的周边给汪汪喽-且看我们下次的天津之旅呢" class="headerlink" title="宝宝带天大的周边给汪汪喽~且看我们下次的天津之旅呢"></a>宝宝带天大的周边给汪汪喽~且看我们下次的天津之旅呢</h3><h4 id="PS-周末一起的啦"><a href="#PS-周末一起的啦" class="headerlink" title="PS:周末一起的啦"></a>PS:周末一起的啦</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 纪念日 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>半周年纪念日</title>
       <link href="/posts/86ecc2d9.html"/>
       <url>/posts/86ecc2d9.html</url>
@@ -816,6 +835,17 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -827,11 +857,33 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>2024</title>
+      <link href="/date24/index.html"/>
+      <url>/date24/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/date24.js"/>
+      <url>/js/date24.js</url>
+      
+        <content type="html"><![CDATA[// 日历初始化逻辑封装为函数const initCalendar = () => {    // 设置默认点亮的日期    const defaultHighlightedDates = {        '5.17': true, '5.18': true, '5.19': true,        '6.7': true, '6.8': true, '6.9': true, '6.10': true, '6.22': true, '6.23': true,        '7.19': true, '7.20': true, '7.21': true, '7.28': true, '7.29': true, '7.30': true, '7.31': true,        '8.1': true, '8.2': true, '8.3': true, '8.4': true, '8.9': true, '8.10': true, '8.11': true, '8.24': true, '8.25': true,        '9.7': true, '9.8': true, '9.14': true, '9.15': true, '9.16': true, '9.17': true,        '10.6': true, '10.7': true, '10.18': true, '10.19': true, '10.20': true,        '11.2': true, '11.3': true, '11.16': true, '11.17': true, '11.23': true,        '12.7': true, '12.8': true    };    localStorage.setItem('savedDates', JSON.stringify(defaultHighlightedDates));    const generateCalendar = (year) => {        const calendar = document.getElementById('calendar');        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回        calendar.innerHTML = '';        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'];        monthNames.forEach((name, month) => {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${name} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const headerRow = createTableHeader();            table.appendChild(headerRow);            const daysInMonth = new Date(year, month + 1, 0).getDate();            const firstDay = new Date(year, month, 1).getDay();            for (let i = 0, day = 1; i < 6; i++) {                const row = document.createElement('tr');                for (let j = 0; j < 7; j++) {                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, defaultHighlightedDates);                    if (cell.day) day++;                    row.appendChild(cell.element);                }                table.appendChild(row);            }            monthDiv.appendChild(table);            calendar.appendChild(monthDiv);        });    };    const createTableHeader = () => {        const headerRow = document.createElement('tr');        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {            const th = document.createElement('th');            th.textContent = day;            headerRow.appendChild(th);        });        return headerRow;    };    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {        const cell = { element: document.createElement('td'), day: false };        const dateKey = `${month + 1}.${day}`;        if ((row === 0 && col < firstDay) || day > daysInMonth) {            cell.element.className = 'empty';        } else {            cell.day = true;            cell.element.textContent = day;            if (savedDates[dateKey]) addHeartOverlay(cell.element);        }        return cell;    };    const addHeartOverlay = (element) => {        const overlay = document.createElement('div');        overlay.className = 'heart-overlay';        overlay.textContent = '❤';        element.appendChild(overlay);    };    generateCalendar(2024);};// 初始化页面document.addEventListener('DOMContentLoaded', initCalendar);// 监听 Pjax 页面切换事件document.addEventListener('pjax:complete', initCalendar);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/runtime.min.js"/>
+      <url>/js/runtime.min.js</url>
+      
+        <content type="html"><![CDATA[var now=new Date;function createtime(){    var t=new Date("06/07/2024 22:28:00");    now.setTime(now.getTime()+250);    var e=(now-t)/1e3/60/60/24,a=Math.floor(e),n=(now-t)/1e3/60/60-24*a,r=Math.floor(n);    1==String(r).length&&(r="0"+r);    var s=(now-t)/1e3/60-1440*a-60*r,i=Math.floor(s);    1==String(i).length&&(i="0"+i);    var o=(now-t)/1e3-86400*a-3600*r-60*i,l=Math.round(o);    1==String(l).length&&(l="0"+l);    let g="";    g=r<18&&r>=9?`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`:`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),250);]]></content>
       
     </entry>
     
@@ -854,39 +906,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2024</title>
-      <link href="/date24/index.html"/>
-      <url>/date24/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/runtime.min.js"/>
-      <url>/js/runtime.min.js</url>
-      
-        <content type="html"><![CDATA[var now=new Date;function createtime(){    var t=new Date("06/07/2024 22:28:00");    now.setTime(now.getTime()+250);    var e=(now-t)/1e3/60/60/24,a=Math.floor(e),n=(now-t)/1e3/60/60-24*a,r=Math.floor(n);    1==String(r).length&&(r="0"+r);    var s=(now-t)/1e3/60-1440*a-60*r,i=Math.floor(s);    1==String(i).length&&(i="0"+i);    var o=(now-t)/1e3-86400*a-3600*r-60*i,l=Math.round(o);    1==String(l).length&&(l="0"+l);    let g="";    g=r<18&&r>=9?`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`:`<span class='textTip'> 我们在一起已经 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒啦~ </span> <i class='fas fa-heartbeat' style='color:red'></i>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),250);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/date24.js"/>
-      <url>/js/date24.js</url>
-      
-        <content type="html"><![CDATA[// 日历初始化逻辑封装为函数const initCalendar = () => {    // 设置默认点亮的日期    const defaultHighlightedDates = {        '5.17': true, '5.18': true, '5.19': true,        '6.7': true, '6.8': true, '6.9': true, '6.10': true, '6.22': true, '6.23': true,        '7.19': true, '7.20': true, '7.21': true, '7.28': true, '7.29': true, '7.30': true, '7.31': true,        '8.1': true, '8.2': true, '8.3': true, '8.4': true, '8.9': true, '8.10': true, '8.11': true, '8.24': true, '8.25': true,        '9.7': true, '9.8': true, '9.14': true, '9.15': true, '9.16': true, '9.17': true,        '10.6': true, '10.7': true, '10.18': true, '10.19': true, '10.20': true,        '11.2': true, '11.3': true, '11.16': true, '11.17': true, '11.23': true,        '12.7': true, '12.8': true    };    localStorage.setItem('savedDates', JSON.stringify(defaultHighlightedDates));    const generateCalendar = (year) => {        const calendar = document.getElementById('calendar');        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回        calendar.innerHTML = '';        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'];        monthNames.forEach((name, month) => {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${name} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const headerRow = createTableHeader();            table.appendChild(headerRow);            const daysInMonth = new Date(year, month + 1, 0).getDate();            const firstDay = new Date(year, month, 1).getDay();            for (let i = 0, day = 1; i < 6; i++) {                const row = document.createElement('tr');                for (let j = 0; j < 7; j++) {                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, defaultHighlightedDates);                    if (cell.day) day++;                    row.appendChild(cell.element);                }                table.appendChild(row);            }            monthDiv.appendChild(table);            calendar.appendChild(monthDiv);        });    };    const createTableHeader = () => {        const headerRow = document.createElement('tr');        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {            const th = document.createElement('th');            th.textContent = day;            headerRow.appendChild(th);        });        return headerRow;    };    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {        const cell = { element: document.createElement('td'), day: false };        const dateKey = `${month + 1}.${day}`;        if ((row === 0 && col < firstDay) || day > daysInMonth) {            cell.element.className = 'empty';        } else {            cell.day = true;            cell.element.textContent = day;            if (savedDates[dateKey]) addHeartOverlay(cell.element);        }        return cell;    };    const addHeartOverlay = (element) => {        const overlay = document.createElement('div');        overlay.className = 'heart-overlay';        overlay.textContent = '❤';        element.appendChild(overlay);    };    generateCalendar(2024);};// 初始化页面document.addEventListener('DOMContentLoaded', initCalendar);// 监听 Pjax 页面切换事件document.addEventListener('pjax:complete', initCalendar);]]></content>
       
     </entry>
     
