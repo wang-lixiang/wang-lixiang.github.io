@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>2025跨年啦</title>
+      <link href="/posts/fed9a157.html"/>
+      <url>/posts/fed9a157.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="宝宝今天是生理期，但是还是勇敢的和汪汪一起出门跨年"><a href="#宝宝今天是生理期，但是还是勇敢的和汪汪一起出门跨年" class="headerlink" title="宝宝今天是生理期，但是还是勇敢的和汪汪一起出门跨年~"></a>宝宝今天是生理期，但是还是勇敢的和汪汪一起出门跨年~</h3><h3 id="我们来到了太湖边的酒店，在窗边欣赏着日落，虽然宝宝肚子痛痛，但是还是巧妙的排出很多有意境的照片！"><a href="#我们来到了太湖边的酒店，在窗边欣赏着日落，虽然宝宝肚子痛痛，但是还是巧妙的排出很多有意境的照片！" class="headerlink" title="我们来到了太湖边的酒店，在窗边欣赏着日落，虽然宝宝肚子痛痛，但是还是巧妙的排出很多有意境的照片！"></a>我们来到了太湖边的酒店，在窗边欣赏着日落，虽然宝宝肚子痛痛，但是还是巧妙的排出很多有意境的照片！</h3><img src="/img/2025/2.jpg" width="40%" height="40%"><img src="/img/2025/3.jpg" width="40%" height="40%"><img src="/img/2025/5.jpg" width="40%" height="40%"><img src="/img/2025/6.jpg" width="40%" height="40%"><h3 id="宝宝努力拍落日的样子"><a href="#宝宝努力拍落日的样子" class="headerlink" title="宝宝努力拍落日的样子~"></a>宝宝努力拍落日的样子~</h3><img src="/img/2025/4.jpg" width="40%" height="40%"><h3 id="夜晚我们聆听到窗外的烟花声，一起幸福的看着烟花"><a href="#夜晚我们聆听到窗外的烟花声，一起幸福的看着烟花" class="headerlink" title="夜晚我们聆听到窗外的烟花声，一起幸福的看着烟花"></a>夜晚我们聆听到窗外的烟花声，一起幸福的看着烟花</h3><h3 id="伴随五彩斑斓的烟花，向彼此说出新年快乐"><a href="#伴随五彩斑斓的烟花，向彼此说出新年快乐" class="headerlink" title="伴随五彩斑斓的烟花，向彼此说出新年快乐~"></a>伴随五彩斑斓的烟花，向彼此说出新年快乐~</h3><p><video src="/video/8.mp4" controls="controls" width="300" height="300"  style="display: block; margin: 0 auto;"></video><br><video src="/video/9.mp4" controls="controls" width="300" height="300"  style="display: block; margin: 0 auto;"></video></p><h3 id="汪汪的新年愿望是：要和宝宝一起跨过余生的每一年"><a href="#汪汪的新年愿望是：要和宝宝一起跨过余生的每一年" class="headerlink" title="汪汪的新年愿望是：要和宝宝一起跨过余生的每一年~"></a>汪汪的新年愿望是：要和宝宝一起跨过余生的每一年~</h3><h3 id="汪汪要回去了，拍到了送别的宝宝，宝宝也拍到了汪汪"><a href="#汪汪要回去了，拍到了送别的宝宝，宝宝也拍到了汪汪" class="headerlink" title="汪汪要回去了，拍到了送别的宝宝，宝宝也拍到了汪汪"></a>汪汪要回去了，拍到了送别的宝宝，宝宝也拍到了汪汪</h3><img src="/img/2025/7.jpg" width="40%" height="40%"><img src="/img/2025/8.jpg" width="40%" height="40%"><h3 id="悄悄说一句：汪汪之所以没哭鼻子，是因为在强忍着！"><a href="#悄悄说一句：汪汪之所以没哭鼻子，是因为在强忍着！" class="headerlink" title="悄悄说一句：汪汪之所以没哭鼻子，是因为在强忍着！"></a>悄悄说一句：汪汪之所以没哭鼻子，是因为在强忍着！</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 旅途 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>200天啦</title>
       <link href="/posts/a48785f4.html"/>
       <url>/posts/a48785f4.html</url>
@@ -835,11 +854,11 @@
     
     
     <entry>
-      <title>2024</title>
-      <link href="/date24/index.html"/>
-      <url>/date24/index.html</url>
+      <title></title>
+      <link href="/css/date24.css"/>
+      <url>/css/date24.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[.year-calendar {    display: flex;    flex-wrap: wrap;    justify-content: center;    margin: 20px auto;    gap: 15px;    max-width: 1200px; /* 容器最大宽度 */}.month {    background-color: #ffffff;    border: 1px solid #e3e3e3;    border-radius: 10px;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    padding: 15px;    flex: 1 1 calc(25% - 30px); /* 每行最多显示4个，留出间隙 */    min-width: 250px; /* 最小宽度 */    max-width: 300px; /* 最大宽度，防止过宽 */    overflow: hidden; /* 避免内容溢出 */    transition: transform 0.2s ease;}.month:hover {    transform: scale(1.05);}.month-name {    text-align: center;    font-size: 18px;    font-weight: bold;    color: #4A90E2;    margin-bottom: 10px;}table {    width: 100%; /* 表格宽度自适应父容器 */    border-collapse: collapse;    table-layout: fixed; /* 固定表格布局 */}th, td {    width: 14.28%; /* 每列占总宽度的 1/7 */    height: 35px;    text-align: center;    vertical-align: middle;    border: 1px solid #e3e3e3;    color: #555;    position: relative;    box-sizing: border-box; /* 确保宽度包括内边距和边框 */}th {    background-color: #f4f4f4;    color: #555;    font-weight: bold;}td {    background-color: #ffffff;}td:hover {    background-color: #dff0ff;    cursor: pointer;}.empty {    background-color: #f7f8fc;    cursor: default;}.heart-overlay {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(255, 0, 0, 0.3); /* 半透明的红色背景 */    color: #ff0000;    font-size: 30px;    display: flex;    justify-content: center;    align-items: center;    font-weight: bold;}/* 响应式设计 */@media (max-width: 1024px) {    .month {        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */    }}@media (max-width: 768px) {    .month {        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */    }}@media (max-width: 480px) {    .month {        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */    }}]]></content>
       
     </entry>
     
@@ -857,9 +876,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>2024</title>
+      <link href="/date24/index.html"/>
+      <url>/date24/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -868,9 +887,20 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/js/date.js"/>
+      <url>/js/date.js</url>
+      
+        <content type="html"><![CDATA[// 日历初始化逻辑封装为函数const initCalendar = () => {    // 动态获取年份    const calendarElement = document.getElementById('calendar');    const year = parseInt(calendarElement.dataset.year, 10); // 从 data-year 属性获取年份    if (isNaN(year)) {        console.error("Invalid year provided in #calendar data-year attribute");        return;    }    // 动态获取默认点亮日期    const defaultHighlightedDates = JSON.parse(calendarElement.dataset.dates || '{}');    const generateCalendar = (year) => {        calendarElement.innerHTML = ''; // 清空已有内容        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'];        monthNames.forEach((name, month) => {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${name} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const headerRow = createTableHeader();            table.appendChild(headerRow);            const daysInMonth = new Date(year, month + 1, 0).getDate();            const firstDay = new Date(year, month, 1).getDay();            for (let i = 0, day = 1; i < 6; i++) {                const row = document.createElement('tr');                for (let j = 0; j < 7; j++) {                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, defaultHighlightedDates);                    if (cell.day) day++;                    row.appendChild(cell.element);                }                table.appendChild(row);            }            monthDiv.appendChild(table);            calendarElement.appendChild(monthDiv);        });    };    const createTableHeader = () => {        const headerRow = document.createElement('tr');        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {            const th = document.createElement('th');            th.textContent = day;            headerRow.appendChild(th);        });        return headerRow;    };    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {        const cell = { element: document.createElement('td'), day: false };        const dateKey = `${month + 1}.${day}`;        if ((row === 0 && col < firstDay) || day > daysInMonth) {            cell.element.className = 'empty';        } else {            cell.day = true;            cell.element.textContent = day;            if (savedDates[dateKey]) addHeartOverlay(cell.element);        }        return cell;    };    const addHeartOverlay = (element) => {        const overlay = document.createElement('div');        overlay.className = 'heart-overlay';        overlay.textContent = '❤';        element.appendChild(overlay);    };    // 根据年份生成日历    generateCalendar(year);};// 初始化页面document.addEventListener('DOMContentLoaded', initCalendar);// 监听 Pjax 页面切换事件document.addEventListener('pjax:complete', initCalendar);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2025</title>
+      <link href="/date25/index.html"/>
+      <url>/date25/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -890,22 +920,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/js/date24.js"/>
-      <url>/js/date24.js</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[// 日历初始化逻辑封装为函数const initCalendar = () => {    // 设置默认点亮的日期    const defaultHighlightedDates = {        '5.17': true, '5.18': true, '5.19': true,        '6.7': true, '6.8': true, '6.9': true, '6.10': true, '6.22': true, '6.23': true,        '7.19': true, '7.20': true, '7.21': true, '7.28': true, '7.29': true, '7.30': true, '7.31': true,        '8.1': true, '8.2': true, '8.3': true, '8.4': true, '8.9': true, '8.10': true, '8.11': true, '8.24': true, '8.25': true,        '9.7': true, '9.8': true, '9.14': true, '9.15': true, '9.16': true, '9.17': true,        '10.6': true, '10.7': true, '10.18': true, '10.19': true, '10.20': true,        '11.2': true, '11.3': true, '11.16': true, '11.17': true, '11.23': true,        '12.7': true, '12.8': true, '12.21': true, '12.22': true    };    localStorage.setItem('savedDates', JSON.stringify(defaultHighlightedDates));    const generateCalendar = (year) => {        const calendar = document.getElementById('calendar');        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回        calendar.innerHTML = '';        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',            'July', 'August', 'September', 'October', 'November', 'December'];        monthNames.forEach((name, month) => {            const monthDiv = document.createElement('div');            monthDiv.className = 'month';            const monthName = document.createElement('div');            monthName.className = 'month-name';            monthName.textContent = `${name} ${year}`;            monthDiv.appendChild(monthName);            const table = document.createElement('table');            const headerRow = createTableHeader();            table.appendChild(headerRow);            const daysInMonth = new Date(year, month + 1, 0).getDate();            const firstDay = new Date(year, month, 1).getDay();            for (let i = 0, day = 1; i < 6; i++) {                const row = document.createElement('tr');                for (let j = 0; j < 7; j++) {                    const cell = createDateCell(i, j, firstDay, daysInMonth, day, month, defaultHighlightedDates);                    if (cell.day) day++;                    row.appendChild(cell.element);                }                table.appendChild(row);            }            monthDiv.appendChild(table);            calendar.appendChild(monthDiv);        });    };    const createTableHeader = () => {        const headerRow = document.createElement('tr');        ['S', 'M', 'T', 'W', 'R', 'F', 'X'].forEach(day => {            const th = document.createElement('th');            th.textContent = day;            headerRow.appendChild(th);        });        return headerRow;    };    const createDateCell = (row, col, firstDay, daysInMonth, day, month, savedDates) => {        const cell = { element: document.createElement('td'), day: false };        const dateKey = `${month + 1}.${day}`;        if ((row === 0 && col < firstDay) || day > daysInMonth) {            cell.element.className = 'empty';        } else {            cell.day = true;            cell.element.textContent = day;            if (savedDates[dateKey]) addHeartOverlay(cell.element);        }        return cell;    };    const addHeartOverlay = (element) => {        const overlay = document.createElement('div');        overlay.className = 'heart-overlay';        overlay.textContent = '❤';        element.appendChild(overlay);    };    generateCalendar(2024);};// 初始化页面document.addEventListener('DOMContentLoaded', initCalendar);// 监听 Pjax 页面切换事件document.addEventListener('pjax:complete', initCalendar);]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/css/date24.css"/>
-      <url>/css/date24.css</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[.year-calendar {    display: flex;    flex-wrap: wrap;    justify-content: center;    margin: 20px auto;    gap: 15px;    max-width: 1200px; /* 容器最大宽度 */}.month {    background-color: #ffffff;    border: 1px solid #e3e3e3;    border-radius: 10px;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    padding: 15px;    flex: 1 1 calc(25% - 30px); /* 每行最多显示4个，留出间隙 */    min-width: 250px; /* 最小宽度 */    max-width: 300px; /* 最大宽度，防止过宽 */    overflow: hidden; /* 避免内容溢出 */    transition: transform 0.2s ease;}.month:hover {    transform: scale(1.05);}.month-name {    text-align: center;    font-size: 18px;    font-weight: bold;    color: #4A90E2;    margin-bottom: 10px;}table {    width: 100%; /* 表格宽度自适应父容器 */    border-collapse: collapse;    table-layout: fixed; /* 固定表格布局 */}th, td {    width: 14.28%; /* 每列占总宽度的 1/7 */    height: 35px;    text-align: center;    vertical-align: middle;    border: 1px solid #e3e3e3;    color: #555;    position: relative;    box-sizing: border-box; /* 确保宽度包括内边距和边框 */}th {    background-color: #f4f4f4;    color: #555;    font-weight: bold;}td {    background-color: #ffffff;}td:hover {    background-color: #dff0ff;    cursor: pointer;}.empty {    background-color: #f7f8fc;    cursor: default;}.heart-overlay {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(255, 0, 0, 0.3); /* 半透明的红色背景 */    color: #ff0000;    font-size: 30px;    display: flex;    justify-content: center;    align-items: center;    font-weight: bold;}/* 响应式设计 */@media (max-width: 1024px) {    .month {        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */    }}@media (max-width: 768px) {    .month {        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */    }}@media (max-width: 480px) {    .month {        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */    }}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     

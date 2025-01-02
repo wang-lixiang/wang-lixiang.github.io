@@ -1,22 +1,18 @@
 // 日历初始化逻辑封装为函数
 const initCalendar = () => {
-    // 设置默认点亮的日期
-    const defaultHighlightedDates = {
-        '5.17': true, '5.18': true, '5.19': true,
-        '6.7': true, '6.8': true, '6.9': true, '6.10': true, '6.22': true, '6.23': true,
-        '7.19': true, '7.20': true, '7.21': true, '7.28': true, '7.29': true, '7.30': true, '7.31': true,
-        '8.1': true, '8.2': true, '8.3': true, '8.4': true, '8.9': true, '8.10': true, '8.11': true, '8.24': true, '8.25': true,
-        '9.7': true, '9.8': true, '9.14': true, '9.15': true, '9.16': true, '9.17': true,
-        '10.6': true, '10.7': true, '10.18': true, '10.19': true, '10.20': true,
-        '11.2': true, '11.3': true, '11.16': true, '11.17': true, '11.23': true,
-        '12.7': true, '12.8': true, '12.21': true, '12.22': true
-    };
-    localStorage.setItem('savedDates', JSON.stringify(defaultHighlightedDates));
+    // 动态获取年份
+    const calendarElement = document.getElementById('calendar');
+    const year = parseInt(calendarElement.dataset.year, 10); // 从 data-year 属性获取年份
+    if (isNaN(year)) {
+        console.error("Invalid year provided in #calendar data-year attribute");
+        return;
+    }
+
+    // 动态获取默认点亮日期
+    const defaultHighlightedDates = JSON.parse(calendarElement.dataset.dates || '{}');
 
     const generateCalendar = (year) => {
-        const calendar = document.getElementById('calendar');
-        if (!calendar) return; // 如果页面中没有 calendar 容器，直接返回
-        calendar.innerHTML = '';
+        calendarElement.innerHTML = ''; // 清空已有内容
 
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'];
@@ -48,7 +44,7 @@ const initCalendar = () => {
             }
 
             monthDiv.appendChild(table);
-            calendar.appendChild(monthDiv);
+            calendarElement.appendChild(monthDiv);
         });
     };
 
@@ -83,7 +79,8 @@ const initCalendar = () => {
         element.appendChild(overlay);
     };
 
-    generateCalendar(2024);
+    // 根据年份生成日历
+    generateCalendar(year);
 };
 
 // 初始化页面
