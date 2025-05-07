@@ -130,10 +130,10 @@ common_col_conf: &common_col_conf
       widget: "boolean"
       default: true
 collections:
-  - name: "2023"
-    label: "2023"
-    folder: "source/_posts/2023"
-    preview_path: "2023/{{filename}}/"
+  - name: "2024"
+    label: "2024"
+    folder: "source/_posts/2024"
+    preview_path: "2024/{{filename}}/"
     <<: *common_col_conf
   - name: "2022"
     label: "2022"
