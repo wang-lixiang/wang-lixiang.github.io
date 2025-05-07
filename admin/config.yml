@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: wang-lixiang/wang-lixiang.github.io
   branch: master # 要更新的分支(可选；默认为主分支)
   commit_messages:
     create: Create {{collection}} “{{slug}}”
