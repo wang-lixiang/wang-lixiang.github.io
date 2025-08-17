@@ -4,7 +4,7 @@
     justify-content: center;
     margin: 20px auto;
     gap: 15px;
-    max-width: 1200px; /* 容器最大宽度 */
+    max-width: 1200px;
 }
 .month {
     background-color: #ffffff;
@@ -12,10 +12,10 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    flex: 1 1 calc(25% - 30px); /* 每行最多显示4个，留出间隙 */
-    min-width: 250px; /* 最小宽度 */
-    max-width: 300px; /* 最大宽度，防止过宽 */
-    overflow: hidden; /* 避免内容溢出 */
+    flex: 1 1 calc(25% - 30px);
+    min-width: 250px;
+    max-width: 300px;
+    overflow: hidden;
     transition: transform 0.2s ease;
 }
 .month:hover {
@@ -29,19 +29,19 @@
     margin-bottom: 10px;
 }
 table {
-    width: 100%; /* 表格宽度自适应父容器 */
+    width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* 固定表格布局 */
+    table-layout: fixed;
 }
 th, td {
-    width: 14.28%; /* 每列占总宽度的 1/7 */
+    width: 14.28%;
     height: 35px;
     text-align: center;
     vertical-align: middle;
     border: 1px solid #e3e3e3;
     color: #555;
     position: relative;
-    box-sizing: border-box; /* 确保宽度包括内边距和边框 */
+    box-sizing: border-box;
 }
 th {
     background-color: #f4f4f4;
@@ -59,33 +59,39 @@ td:hover {
     background-color: #f7f8fc;
     cursor: default;
 }
-.heart-overlay {
+.heart-overlay,
+.broken-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.3); /* 半透明的红色背景 */
-    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.3);
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
 }
+.heart-overlay {
+    color: #ff0000; /* 红色 ❤ */
+}
+.broken-overlay {
+    color: #000000; /* 黑色 💔 */
+}
 /* 响应式设计 */
 @media (max-width: 1024px) {
     .month {
-        flex: 1 1 calc(33.33% - 20px); /* 每行最多显示3个 */
+        flex: 1 1 calc(33.33% - 20px);
     }
 }
 @media (max-width: 768px) {
     .month {
-        flex: 1 1 calc(50% - 20px); /* 每行最多显示2个 */
+        flex: 1 1 calc(50% - 20px);
     }
 }
 @media (max-width: 480px) {
     .month {
-        flex: 1 1 calc(100% - 20px); /* 每行显示1个 */
+        flex: 1 1 calc(100% - 20px);
     }
 }

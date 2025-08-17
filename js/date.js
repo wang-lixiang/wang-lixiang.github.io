@@ -1,18 +1,15 @@
-// 日历初始化逻辑封装为函数
 const initCalendar = () => {
-    // 动态获取年份
     const calendarElement = document.getElementById('calendar');
-    const year = parseInt(calendarElement.dataset.year, 10); // 从 data-year 属性获取年份
+    const year = parseInt(calendarElement.dataset.year, 10);
     if (isNaN(year)) {
         console.error("Invalid year provided in #calendar data-year attribute");
         return;
     }
 
-    // 动态获取默认点亮日期
     const defaultHighlightedDates = JSON.parse(calendarElement.dataset.dates || '{}');
 
     const generateCalendar = (year) => {
-        calendarElement.innerHTML = ''; // 清空已有内容
+        calendarElement.innerHTML = '';
 
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'];
@@ -67,24 +64,28 @@ const initCalendar = () => {
         } else {
             cell.day = true;
             cell.element.textContent = day;
-            if (savedDates[dateKey]) addHeartOverlay(cell.element);
+
+            const markType = savedDates[dateKey];
+            if (markType) {
+                if (markType === true) {
+                    addOverlay(cell.element, 'heart-overlay', '❤');
+                } else if (markType === "broken") {
+                    addOverlay(cell.element, 'broken-overlay', '💔');
+                }
+            }
         }
         return cell;
     };
 
-    const addHeartOverlay = (element) => {
+    const addOverlay = (element, className, symbol) => {
         const overlay = document.createElement('div');
-        overlay.className = 'heart-overlay';
-        overlay.textContent = '❤';
+        overlay.className = className;
+        overlay.textContent = symbol;
         element.appendChild(overlay);
     };
 
-    // 根据年份生成日历
     generateCalendar(year);
 };
 
-// 初始化页面
 document.addEventListener('DOMContentLoaded', initCalendar);
-
-// 监听 Pjax 页面切换事件
 document.addEventListener('pjax:complete', initCalendar);
