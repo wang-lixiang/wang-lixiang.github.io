@@ -1,3 +1,4 @@
+// 日历初始化逻辑封装为函数
 const initCalendar = () => {
     const calendarElement = document.getElementById('calendar');
     const year = parseInt(calendarElement.dataset.year, 10);
@@ -10,7 +11,6 @@ const initCalendar = () => {
 
     const generateCalendar = (year) => {
         calendarElement.innerHTML = '';
-
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -65,12 +65,11 @@ const initCalendar = () => {
             cell.day = true;
             cell.element.textContent = day;
 
-            const markType = savedDates[dateKey];
-            if (markType) {
-                if (markType === true) {
+            if (savedDates[dateKey]) {
+                if (savedDates[dateKey] === true) {
                     addOverlay(cell.element, 'heart-overlay', '❤');
-                } else if (markType === "broken") {
-                    addOverlay(cell.element, 'broken-overlay', '💔');
+                } else if (savedDates[dateKey] === "broken") {
+                    addOverlay(cell.element, 'broken-overlay', '💔︎'); // 文本版黑色
                 }
             }
         }
